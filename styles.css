@@ -1,0 +1,523 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 1px; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    text-align: center; 
+}
+
+header {
+    background-color: #0b8080; 
+    color: white;
+    padding: -100px 0; 
+    position: relative; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    margin-bottom: -8px; 
+}
+
+.header-content {
+    text-align: center; 
+    margin: 0; 
+    display: inline-block; 
+}
+
+.logo-container {
+    position: absolute; 
+    top: 10px; 
+    right: 80px; 
+}
+
+.logo {
+    max-width: 150px; 
+    height: auto;
+    margin-left: 20px; 
+}
+
+nav {
+    text-align: center; 
+}
+
+main {
+    padding-top: 100px; 
+}
+.header-text {
+    font-size: 1.5em;
+    margin: 5px 0; 
+}
+
+.site-title {
+    font-size: 5.5em; 
+    margin: 0; 
+}
+
+/* Remove duplicate header-text styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 10px;
+    background: #fff; 
+    border: 4px solid #0f9b1b; 
+    border-radius: 9px;
+    padding: 5px 15px; 
+    box-shadow: 0 4px 8px rgba(19, 18, 18, 0.1); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+    font-size: 1.2em; 
+}
+
+.nav-item a {
+    color: #0b8080; 
+    text-decoration: none; 
+    display: block;
+}
+
+.nav-item:hover {
+    background-color: #0b8080;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item:hover a {
+    color: #fff; 
+}
+
+footer {
+    background: #0f9b1b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: auto; 
+}
+
+
+
+
+
+/* Home Page */
+.home-page {
+    background: url('video/live.mp4') no-repeat center center fixed;
+    background-size: cover;
+    flex: 1; 
+}
+
+.hero {
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    padding: 70px;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #008000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+/* Box Styles for Sections */
+.featured-content, .featured-games, .call-to-action {
+    background-color: #f9f9f9;
+    border: 10px solid #333;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px; 
+}
+
+/* Featured Games Section */
+.featured-games {
+    padding: 30px;
+}
+
+.featured-games .game {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.featured-games h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.featured-games p {
+    font-size: 1em;
+    color: #666;
+}
+/* Add this style to ensure the video covers the background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .nav-item {
+        margin-bottom: 10px;
+    }
+    .hero {
+        height: 400px;
+    }
+    .hero-content h2 {
+        font-size: 1.5em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+}
+
+/* Blogs Page */
+.blogs-page {
+    background: url('images/5.jpg') no-repeat center center fixed;
+    background-size: cover;
+    flex: 1; 
+}
+.blogs-list {
+    padding: 20px;
+    text-align: center; 
+}
+
+.blogs-list h2 {
+    margin-bottom: 20px;
+}
+
+/* Blog Post Styles */
+.blog-container {
+    border: 5px solid #333; 
+    padding: 60px; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: left; 
+}
+
+.blog-img {
+    width: 350px; 
+    height: 350px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin: 0 auto 15px;
+    display: block;
+}
+
+.blog-container h3 {
+    margin-top: 0;
+}
+
+.blog-container p {
+    margin-bottom: 15px;
+}
+
+.blog-container a {
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+.blog-container a:hover {
+    text-decoration: underline; 
+}
+
+.intro-box {
+    border: 10px solid #333; 
+    padding: 20px;         
+    background-color: #f9f9f9; 
+    text-align: center;      
+    margin: 20px auto;      
+    max-width: 860px;       
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Blogs Page - Read More Functionality */
+.more-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* About Page */
+.about-page {
+    background: url('images/theme.png') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center; 
+}
+/* Add this style to ensure the video covers the background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+main {
+    position: relative;
+    z-index: 1; 
+    padding: 20px; 
+    color: #fff; 
+}
+
+.about-us-box h2,
+.personal-introduction p,
+.gaming-background p,
+.blog-purpose p,
+.favorite-games h3,
+.contact-info h3 {
+    color: #333; 
+}
+
+.about-us-box {
+    border: 10px solid #333;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin: 20px auto;
+    max-width: 920px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.personal-introduction, .gaming-background, .blog-purpose, .favorite-games, .contact-info {
+    border: 10px solid #333; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 900px; 
+    margin: 20px auto; 
+    text-align: left; 
+}
+
+.profile-img {
+    border-radius: 50%;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto 30px; 
+}
+
+.favorite-games ul, .contact-info ul {
+    padding-left: 0;
+    list-style: none; 
+}
+
+.favorite-games ul {
+    text-align: center; 
+}
+
+.contact-info ul {
+    text-align: center; 
+}
+
+.contact-info ul li {
+    margin: 5px 0;
+}
+
+/* Contact Page */
+.contact-page {
+    background: url('images/theme.png') no-repeat center center fixed;
+    background-size: cover;
+    flex: 1;
+}
+/* Add this style to ensure the video covers the background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+main {
+    position: relative;
+    z-index: 1; 
+    padding: 20px;
+    color: #333;
+}
+
+.contact-heading-box {
+    background: rgba(255, 255, 255, 0.9);
+    border: 10px solid #333;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 10px auto;
+    max-width: 890px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-heading-box h2 {
+    font-size: 1.5em; 
+    margin-bottom: 10px; 
+}
+
+form {
+    border: 10px solid #333;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-size: 1.2em; 
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1.2em; 
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em; 
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Information Section */
+.contact-info {
+    border: 10px solid #333;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align the text */
+}
+
+.contact-info h3 {
+    font-size: 2em; /* Increase the font size of the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.contact-info p {
+    font-size: 1.2em; /* Increase the font size of the contact details */
+    margin: 0; /* Remove default margin from <p> elements */
+    line-height: 2.6; /* Optional: Increase line height for better readability */
+}
+
+/* Social Media Section */
+.social-media {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 10px solid #333;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-media h3 {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #007bff;
+    color: #fff;
+}

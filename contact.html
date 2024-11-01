@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Gaming Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="contact-page">
+    <!-- Add the video element here -->
+    <video autoplay muted loop class="video-background">
+        <source src="videos/background1.mp4" type="video/mp4"> 
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <div class="header-content"> 
+            <h1 class="site-title">Gaming Adventures</h1>
+            <p class="header-text">Your ultimate source for gaming news and reviews!</p>
+        </div>
+        <div class="logo-container"> 
+            <img src="images/Gaming Adventures.png" alt="Gaming Adventures Logo" class="logo"> 
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="blogs.html">Blogs</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-heading-box">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us with any questions, feedback, or collaboration ideas. We’d love to hear from you!</p>
+        </div>
+
+        <form action="submit-form.php" method="post">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Your First Name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Your Last Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+
+        <section class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Name: Caoili Benjamin<br>
+               Address: Km4 La Trinidad, Benguet<br>
+               Email: <a href="mailto:caoilibenjamin7@gmail.com">caoilibenjamin7@gmail.com</a><br>
+               Phone: +63 923 412 4278</p>
+        </section>
+
+        <section class="social-media">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="mailto:example@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Gaming is not a Crime.</p>
+    </footer>
+</body>
+</html>
